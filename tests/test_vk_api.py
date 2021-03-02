@@ -12,7 +12,7 @@ def test_postMessageToWall():
 
 def test_deleteMessageFromWall():
     res = deleteMessageFromWall()
-    assert res.get('response')[0] == 1
+    assert res.get('response') == 1
 
 if __name__ == '__main__':
     test_getUserNameFromId()
