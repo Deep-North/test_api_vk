@@ -24,7 +24,7 @@ def getFollowers(count): #вывожу имена подписчиков (10 ш�
 
 def getWallMessages():
     api = auth()
-    wallPost=api.wall.get(domain='merkuloff16', count=10)
+    wallPost=api.wall.get(owner_id=1, count=10)
     #print(wallPost.get('items')[0].get('text'))
     for item in wallPost.get('items'):
         print(item.get('text'))
